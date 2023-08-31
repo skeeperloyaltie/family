@@ -2,6 +2,7 @@
 
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTLinkingManager.h>
+#import "RNSPlashScreen.h"
 
 @implementation AppDelegate
 
@@ -12,6 +13,7 @@
   // You can add your custom initial props in the dictionary below.
   // They will be passed down to the ViewController used by React Native.
   self.initialProps = @{};
+  [RNSPlashScreen show];
 
   return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }
@@ -41,6 +43,8 @@
 {
   return [super application:application didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
 }
+
+
 
 // Explicitly define remote notification delegates to ensure compatibility with some third-party libraries
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error
