@@ -33,8 +33,7 @@ export default function App() {
               }}
             />
             <Text style={styles.textStyle}>
-              The Big Bang Theory
-            </Text>
+Welp - I donno what came over me            </Text>
           </View>
         </View>
       </ImageBackground>
